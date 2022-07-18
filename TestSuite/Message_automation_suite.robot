@@ -1,5 +1,5 @@
 *** Settings ***
-Resource        ../Resources/CommonFunctionality.resource
+Resource        ../Resources_and_Keywords/CommonFunctionality.resource
 #Library  AppiumLibrary
 #Library     DateTime
 

@@ -1,5 +1,6 @@
 *** Settings ***
-Resource        ../Resources/CommonFunctionality.resource
+Resource        ../Resources_and_Keywords/CommonFunctionality.resource
+
 
 Test Setup      Call
 
