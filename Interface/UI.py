@@ -290,7 +290,7 @@ class User:
         def reports_check():
             #   window.destroy()
                 filename = filedialog.askopenfilename(
-                initialdir="/home/indranee/Mobile application/Reports/",
+                initialdir="E:/LT_Technology_Services/INTERNSHIP/Shadow_project/Reports/",
                 title="Select the report file",
                 filetypes=(("Text files",
                             "*.txt*"),
