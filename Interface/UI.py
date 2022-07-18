@@ -909,11 +909,6 @@ class User:
         bt3.place(x=40, y=vary)
         window.mainloop()
 
-# <<<<<<< HEAD
-# login_page()
-# # =======
-# exist_field()
-# >>>>>>> origin/master
 
 root =Tk()
 obj = User(root)
