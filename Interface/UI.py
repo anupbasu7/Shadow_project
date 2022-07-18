@@ -909,7 +909,6 @@ class User:
         bt3.place(x=40, y=vary)
         window.mainloop()
 
-
 root =Tk()
 obj = User(root)
 root.mainloop()
