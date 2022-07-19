@@ -3,6 +3,7 @@
 Library  AppiumLibrary
 Library     DateTime
 
+
 *** Keywords ***
 Open Browser
         Open Application    http://localhost:4723/wd/hub    platformName=Android    deviceName=WWCIXWGEAAX8VWY9     appPackage=com.android.chrome   appActivity=com.google.android.apps.chrome.Main     noReset=${True}
