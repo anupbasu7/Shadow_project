@@ -12,7 +12,7 @@ from tkinter import filedialog
 from datetime import date
 import shutil
 
-Dict = {1: 'Message_automation_suite.robot', 2: 'Call_suite.robot', 3: 'check_IPV4_case.robot', 4:'check_IPV6_case.robot', 5:'download_speed_case.robot', 6:'mag_data_On_case.robot', 7:'send_a_msg_case.robot'}
+Dict = {1: 'Message_automation_suite.robot', 2: 'Call_suite.robot', 3: 'Calculator_Automate.robot', 4: 'check_IPV6_case.robot', 5:'TC_1_HTTP_Downlink_in_LTE_3G.robot', 6:'TC_6_Message_Automate.robot', 7:'TC_15&16_connection_check.robot'}
 list1 = ['1']
 today = date.today()
 test_run_no = 0
@@ -884,8 +884,6 @@ class User:
     # <<<<<<< HEAD
         window.img2 = PhotoImage(file='Interface/Images/lt4_2.png', master=window)
         Label(window, image=window.img2, border=0, bg='white').place(x=5, y=650)
-    # =======
-    # >>>>>>> origin/master
 
         frame = Frame(window, width=450, height=550, bg='#fff')
         frame.place(x=480, y=70)
