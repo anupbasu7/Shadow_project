@@ -1,708 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220719 00:26:45.003" rpa="false" schemaversion="2">
-<suite id="s1" name="TC 15&amp;16 connection check" source="E:\LT_Technology_Services\INTERNSHIP\Shadow_project\TestSuite\TC_15&amp;16_connection_check.robot">
-<test id="s1-t1" name="TC_15_1: 4G_LTE_connection_IPv4">
-<kw name="Set Preferred network As LTE" library="Common_Functionality">
-<doc>This Keyword will set the Preffered Network to LTE in Android Devices</doc>
-<kw name="Launch Settings App" library="Common_Functionality">
-<doc>This Keyword will Launch the Settings Application</doc>
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220723 23:39:24.119" rpa="false" schemaversion="2">
+<suite id="s1" name="Call suite" source="E:\LT_Technology_Services\INTERNSHIP\Shadow_project\TestSuite\Call_suite.robot">
+<test id="s1-t1" name="Call Test">
+<kw name="Call" library="CommonFunctionality" type="SETUP">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>platformName=Android</arg>
-<arg>deviceName=${device_Name}</arg>
-<arg>appPackage=com.android.settings</arg>
-<arg>appActivity=com.oppo.settings.SettingsActivity</arg>
+<arg>deviceName=WWCIXWGEAAX8VWY9</arg>
+<arg>appPackage=com.google.android.dialer</arg>
+<arg>appActivity=com.android.dialer.DialtactsActivity</arg>
 <arg>noReset=${True}</arg>
-<arg>fullReset=${False}</arg>
 <doc>Opens a new application to given Appium server.
 Capabilities of appium server, Android and iOS,
 Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<kw name="Capture Page Screenshot">
-<msg timestamp="20220719 00:26:55.058" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" starttime="20220719 00:26:55.058" endtime="20220719 00:26:55.058"/>
+<status status="PASS" starttime="20220723 23:39:24.538" endtime="20220723 23:39:33.564"/>
 </kw>
-<msg timestamp="20220719 00:26:55.058" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:26:55.074" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</msg>
-<status status="FAIL" starttime="20220719 00:26:45.790" endtime="20220719 00:26:55.074"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.074" endtime="20220719 00:26:55.074"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.074" endtime="20220719 00:26:55.074"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:26:45.790" endtime="20220719 00:26:55.074"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.074" endtime="20220719 00:26:55.074"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.074" endtime="20220719 00:26:55.074"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM card &amp; mobile data</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.074" endtime="20220719 00:26:55.074"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.074" endtime="20220719 00:26:55.074"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM2</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.074" endtime="20220719 00:26:55.074"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.089" endtime="20220719 00:26:55.089"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>Preferred network type</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.089" endtime="20220719 00:26:55.089"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.089" endtime="20220719 00:26:55.089"/>
+<status status="PASS" starttime="20220723 23:39:24.538" endtime="20220723 23:39:33.564"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>//android.widget.CheckedTextView[@text="4G/3G/2G (Auto)"]</arg>
+<arg>id=dialpad_fab</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.089" endtime="20220719 00:26:55.089"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.089" endtime="20220719 00:26:55.089"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:26:45.790" endtime="20220719 00:26:55.089"/>
-</kw>
-<kw name="Validate if the Preferred network is set to LTE" library="Common_Functionality">
-<doc>This Keyword will validate if the Preffered Network is set to LTE in Android Devices</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.089" endtime="20220719 00:26:55.089"/>
-</kw>
-<kw name="Test IPv4 In Browser" library="Common_Functionality">
-<doc>This Keyword will Launch Browser and Chect if the Android device has IPv4 Compatibility</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.089" endtime="20220719 00:26:55.089"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:26:55.089" endtime="20220719 00:26:55.089"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:26:45.790" endtime="20220719 00:26:55.089">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</status>
-</test>
-<test id="s1-t2" name="TC_15_2: 3G_connection_IPv4">
-<kw name="Set Preferred network As 3G" library="Common_Functionality">
-<doc>This Keyword will set the Preffered Network to 3G in Android Devices</doc>
-<kw name="Launch Settings App" library="Common_Functionality">
-<doc>This Keyword will Launch the Settings Application</doc>
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=${device_Name}</arg>
-<arg>appPackage=com.android.settings</arg>
-<arg>appActivity=com.oppo.settings.SettingsActivity</arg>
-<arg>noReset=${True}</arg>
-<arg>fullReset=${False}</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<kw name="Capture Page Screenshot">
-<msg timestamp="20220719 00:27:02.265" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" starttime="20220719 00:27:02.265" endtime="20220719 00:27:02.265"/>
-</kw>
-<msg timestamp="20220719 00:27:02.265" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:02.280" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</msg>
-<status status="FAIL" starttime="20220719 00:26:55.089" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:26:55.089" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM card &amp; mobile data</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM2</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>Preferred network type</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
+<msg timestamp="20220723 23:39:33.580" level="INFO">Clicking element 'id=dialpad_fab'.</msg>
+<status status="PASS" starttime="20220723 23:39:33.564" endtime="20220723 23:39:34.205"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>//android.widget.CheckedTextView[@text="3G/2G (Auto)"]</arg>
+<arg>id=eight</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:26:55.089" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Validate if the Preferred network is set to 3G" library="Common_Functionality">
-<doc>This Keyword will validate if the Preffered Network is set to 3G in Android Devices</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Test IPv4 In Browser" library="Common_Functionality">
-<doc>This Keyword will Launch Browser and Chect if the Android device has IPv4 Compatibility</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:02.280" endtime="20220719 00:27:02.280"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:26:55.089" endtime="20220719 00:27:02.280">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</status>
-</test>
-<test id="s1-t3" name="TC_15_3: 2G_connection_IPv4">
-<kw name="Set Preferred network As 2G" library="Common_Functionality">
-<doc>This Keyword will set the Preffered Network to 2G only in Android Devices</doc>
-<kw name="Launch Settings App" library="Common_Functionality">
-<doc>This Keyword will Launch the Settings Application</doc>
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=${device_Name}</arg>
-<arg>appPackage=com.android.settings</arg>
-<arg>appActivity=com.oppo.settings.SettingsActivity</arg>
-<arg>noReset=${True}</arg>
-<arg>fullReset=${False}</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<kw name="Capture Page Screenshot">
-<msg timestamp="20220719 00:27:09.307" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" starttime="20220719 00:27:09.307" endtime="20220719 00:27:09.307"/>
-</kw>
-<msg timestamp="20220719 00:27:09.307" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:09.307" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</msg>
-<status status="FAIL" starttime="20220719 00:27:02.296" endtime="20220719 00:27:09.307"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.307" endtime="20220719 00:27:09.307"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.307" endtime="20220719 00:27:09.307"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:02.280" endtime="20220719 00:27:09.307"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.307" endtime="20220719 00:27:09.307"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.307" endtime="20220719 00:27:09.307"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM card &amp; mobile data</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.307" endtime="20220719 00:27:09.307"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM2</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>Preferred network type</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
+<msg timestamp="20220723 23:39:34.205" level="INFO">Clicking element 'id=eight'.</msg>
+<status status="PASS" starttime="20220723 23:39:34.205" endtime="20220723 23:39:36.313"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>//android.widget.CheckedTextView[@text="2G Only"]</arg>
+<arg>id=zero</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:02.280" endtime="20220719 00:27:09.323"/>
-</kw>
-<kw name="Validate if the Preferred network is set to 2G" library="Common_Functionality">
-<doc>This Keyword will validate if the Preffered Network is set to 2G in Android Devices</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<kw name="Test IPv4 In Browser" library="Common_Functionality">
-<doc>This Keyword will Launch Browser and Chect if the Android device has IPv4 Compatibility</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:09.323" endtime="20220719 00:27:09.323"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:02.280" endtime="20220719 00:27:09.323">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</status>
-</test>
-<test id="s1-t4" name="TC_16_1: 4G_LTE_connection_IPv6">
-<kw name="Set Preferred network As LTE" library="Common_Functionality">
-<doc>This Keyword will set the Preffered Network to LTE in Android Devices</doc>
-<kw name="Launch Settings App" library="Common_Functionality">
-<doc>This Keyword will Launch the Settings Application</doc>
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=${device_Name}</arg>
-<arg>appPackage=com.android.settings</arg>
-<arg>appActivity=com.oppo.settings.SettingsActivity</arg>
-<arg>noReset=${True}</arg>
-<arg>fullReset=${False}</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<kw name="Capture Page Screenshot">
-<msg timestamp="20220719 00:27:16.381" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" starttime="20220719 00:27:16.381" endtime="20220719 00:27:16.381"/>
-</kw>
-<msg timestamp="20220719 00:27:16.381" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:16.397" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</msg>
-<status status="FAIL" starttime="20220719 00:27:09.323" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:09.323" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM card &amp; mobile data</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM2</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>Preferred network type</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
+<msg timestamp="20220723 23:39:36.313" level="INFO">Clicking element 'id=zero'.</msg>
+<status status="PASS" starttime="20220723 23:39:36.313" endtime="20220723 23:39:37.235"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>//android.widget.CheckedTextView[@text="4G/3G/2G (Auto)"]</arg>
+<arg>id=one</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:09.323" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Validate if the Preferred network is set to LTE" library="Common_Functionality">
-<doc>This Keyword will validate if the Preffered Network is set to LTE in Android Devices</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Test IPv6 In Browser" library="Common_Functionality">
-<doc>This Keyword will Launch Browser and Chect if the Android device has IPv6 Compatibility</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:16.397" endtime="20220719 00:27:16.397"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:09.323" endtime="20220719 00:27:16.397">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</status>
-</test>
-<test id="s1-t5" name="TC_16_2: 3G_LTE_connection_IPv6">
-<kw name="Set Preferred network As 3G" library="Common_Functionality">
-<doc>This Keyword will set the Preffered Network to 3G in Android Devices</doc>
-<kw name="Launch Settings App" library="Common_Functionality">
-<doc>This Keyword will Launch the Settings Application</doc>
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=${device_Name}</arg>
-<arg>appPackage=com.android.settings</arg>
-<arg>appActivity=com.oppo.settings.SettingsActivity</arg>
-<arg>noReset=${True}</arg>
-<arg>fullReset=${False}</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<kw name="Capture Page Screenshot">
-<msg timestamp="20220719 00:27:23.429" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" starttime="20220719 00:27:23.429" endtime="20220719 00:27:23.429"/>
-</kw>
-<msg timestamp="20220719 00:27:23.429" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:23.445" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</msg>
-<status status="FAIL" starttime="20220719 00:27:16.412" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:16.412" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM card &amp; mobile data</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM2</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>Preferred network type</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
+<msg timestamp="20220723 23:39:37.235" level="INFO">Clicking element 'id=one'.</msg>
+<status status="PASS" starttime="20220723 23:39:37.235" endtime="20220723 23:39:38.133"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>//android.widget.CheckedTextView[@text="3G/2G (Auto)"]</arg>
+<arg>id=one</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.445" endtime="20220719 00:27:23.445"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:16.412" endtime="20220719 00:27:23.445"/>
-</kw>
-<kw name="Validate if the Preferred network is set to 3G" library="Common_Functionality">
-<doc>This Keyword will validate if the Preffered Network is set to 3G in Android Devices</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.461" endtime="20220719 00:27:23.461"/>
-</kw>
-<kw name="Test IPv6 In Browser" library="Common_Functionality">
-<doc>This Keyword will Launch Browser and Chect if the Android device has IPv6 Compatibility</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.461" endtime="20220719 00:27:23.461"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:23.461" endtime="20220719 00:27:23.461"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:16.412" endtime="20220719 00:27:23.461">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</status>
-</test>
-<test id="s1-t6" name="TC_16_3: 2G_LTE_connection_IPv6">
-<kw name="Set Preferred network As 2G" library="Common_Functionality">
-<doc>This Keyword will set the Preffered Network to 2G only in Android Devices</doc>
-<kw name="Launch Settings App" library="Common_Functionality">
-<doc>This Keyword will Launch the Settings Application</doc>
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=${device_Name}</arg>
-<arg>appPackage=com.android.settings</arg>
-<arg>appActivity=com.oppo.settings.SettingsActivity</arg>
-<arg>noReset=${True}</arg>
-<arg>fullReset=${False}</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<kw name="Capture Page Screenshot">
-<msg timestamp="20220719 00:27:32.307" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<status status="FAIL" starttime="20220719 00:27:32.307" endtime="20220719 00:27:32.307"/>
-</kw>
-<msg timestamp="20220719 00:27:32.322" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:32.322" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</msg>
-<status status="FAIL" starttime="20220719 00:27:23.461" endtime="20220719 00:27:32.322"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.322" endtime="20220719 00:27:32.322"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.322" endtime="20220719 00:27:32.322"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:23.461" endtime="20220719 00:27:32.322"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM card &amp; mobile data</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>SIM2</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
-</kw>
-<kw name="Click Text" library="AppiumLibrary">
-<arg>Preferred network type</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
+<msg timestamp="20220723 23:39:38.133" level="INFO">Clicking element 'id=one'.</msg>
+<status status="PASS" starttime="20220723 23:39:38.133" endtime="20220723 23:39:39.023"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>//android.widget.CheckedTextView[@text="2G Only"]</arg>
+<arg>id=eight</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
+<msg timestamp="20220723 23:39:39.039" level="INFO">Clicking element 'id=eight'.</msg>
+<status status="PASS" starttime="20220723 23:39:39.023" endtime="20220723 23:39:39.930"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=four</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220723 23:39:39.930" level="INFO">Clicking element 'id=four'.</msg>
+<status status="PASS" starttime="20220723 23:39:39.930" endtime="20220723 23:39:40.758"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=three</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220723 23:39:40.758" level="INFO">Clicking element 'id=three'.</msg>
+<status status="PASS" starttime="20220723 23:39:40.758" endtime="20220723 23:39:41.508"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=six</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220723 23:39:41.523" level="INFO">Clicking element 'id=six'.</msg>
+<status status="PASS" starttime="20220723 23:39:41.508" endtime="20220723 23:39:42.320"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=three</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220723 23:39:42.336" level="INFO">Clicking element 'id=three'.</msg>
+<status status="PASS" starttime="20220723 23:39:42.336" endtime="20220723 23:39:43.117"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=zero</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220723 23:39:43.133" level="INFO">Clicking element 'id=zero'.</msg>
+<status status="PASS" starttime="20220723 23:39:43.117" endtime="20220723 23:39:43.968"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=dialpad_voice_call_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220723 23:39:43.968" level="INFO">Clicking element 'id=dialpad_voice_call_button'.</msg>
+<status status="PASS" starttime="20220723 23:39:43.968" endtime="20220723 23:39:44.186"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
+<msg timestamp="20220723 23:39:46.202" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220723 23:39:44.186" endtime="20220723 23:39:46.202"/>
 </kw>
-<status status="FAIL" starttime="20220719 00:27:23.461" endtime="20220719 00:27:32.338"/>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=text</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220723 23:39:46.202" level="INFO">Clicking element 'id=text'.</msg>
+<status status="PASS" starttime="20220723 23:39:46.202" endtime="20220723 23:39:48.436"/>
 </kw>
-<kw name="Validate if the Preferred network is set to 2G" library="Common_Functionality">
-<doc>This Keyword will validate if the Preffered Network is set to 2G in Android Devices</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20220723 23:39:48.436" endtime="20220723 23:39:48.905"/>
 </kw>
-<kw name="Test IPv6 In Browser" library="Common_Functionality">
-<doc>This Keyword will Launch Browser and Chect if the Android device has IPv6 Compatibility</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.338"/>
-</kw>
-<kw name="Set Screenshot Directory" library="SeleniumLibrary">
-<arg>${EXECDIR}${/}Screenshots</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="NOT RUN" starttime="20220719 00:27:32.338" endtime="20220719 00:27:32.348"/>
-</kw>
-<status status="FAIL" starttime="20220719 00:27:23.461" endtime="20220719 00:27:32.349">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Cannot start the 'com.android.settings' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Activity name '.com.oppo.settings.SettingsActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
-</status>
+<status status="PASS" starttime="20220723 23:39:24.538" endtime="20220723 23:39:48.920"/>
 </test>
-<status status="FAIL" starttime="20220719 00:26:45.003" endtime="20220719 00:27:32.354"/>
+<status status="PASS" starttime="20220723 23:39:24.119" endtime="20220723 23:39:48.920"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="6" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="6" skip="0" id="s1" name="TC 15&amp;16 connection check">TC 15&amp;16 connection check</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Call suite">Call suite</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220719 00:26:55.058" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:02.265" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:09.307" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:16.381" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:23.429" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
-<msg timestamp="20220719 00:27:32.322" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
-    AppiumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Capture Page Screenshot</msg>
 </errors>
 </robot>
